@@ -1,0 +1,284 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0098ac;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.container .form{
+  padding: 2rem;
+}
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+ .form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   margin-top: 20px;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ }
+.form a{
+  font-size: 16px;
+  color: #022a74;
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+.form input.button{
+  color: #fff;
+  background: #009579;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover{
+  background: #006653;
+}
+.signup{
+  font-size: 17px;
+  text-align: center;
+}
+.signup label{
+  color: #009579;
+  cursor: pointer;
+}
+.signup label:hover{
+  text-decoration: underline;
+}
+.bkbtn{
+  color: #022a74;
+  font-size: 17px;
+  text-align: center;
+  background: #d3b403;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.bktn{
+    margin: auto;
+    width: 100px;
+}
+.bkbtn label{
+  color: #022a74;
+  cursor: pointer;
+  padding: 20px;
+}
+
+/* Center the div with class name 'intro'
+    and set the width to 100% */
+.intro {
+  margin: auto;
+  padding: 10px;
+  width: 70%;
+}
+
+/* Set the background color to green
+    and the text color to white */
+.intro {
+  color: white;
+}
+
+/* Make the text inside the div with class name intro look bold and attractive */
+.intro h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* center the h2 tag inside the div with class name intro */
+.intro h2 {
+  text-align: center;
+}
+
+/* vertically align the div with class name intro to the center of the page */
+.intro {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* make the buttons inside the div with class name intro look attractive */
+.intro a {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* center the buttons inside the div with class name intro */
+.intro a {
+  margin-top: 31px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/* make the buttons inside the div with class name intro look attractive when hovered */
+.intro a:hover {
+  background-color: #3066ad;
+}
+
+/* center the div named dashboard */
+/** align the text inside the div named dashboard to the center */
+.dashboard h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dashboard a {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.dashboard a {
+  margin-top: 7px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.logoutbtn{
+  background-color: #d3570f;
+}
+
+.dashboard a:hover {
+  background-color: #45a049;
+}
+
+.dashboard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 10px;
+  color: white;
+}
+
+.signbox{
+  padding: 80px 15px; width: 35%; margin: auto; margin-top: 60px; background: #fff;border-radius: 7px;box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* Styles for smartphones (less than 600px width) */
+@media (max-width: 600px) {
+
+    .dashboard a {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .dashboard a {
+      margin-top: 7px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .dashboard a:hover {
+      background-color: #45a049;
+    }
+    
+    .dashboard {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    
+      padding: 10px;
+      color: white;
+    }
+    .signbox{
+      padding: 40px 15px; width: 70%; margin: auto; margin-top: 60px; background: #fff;border-radius: 7px;box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    }
+    .intro h1 {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+  }
+  .intro h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #ffff00;
+  }
+    .intro {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+    }
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 430px;
+      width: 80%;
+      background: #fff;
+      border-radius: 7px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+}

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video Conference</title>
+
+  {% load static %}
+  <link rel = "stylesheet" href = "{% static 'css/style.css' %}" type = "text/css" media = "screen">
+</head>
+
+  <body>
+    <div class="intro xyz">
+        <h1>Welcome to Our Application</h1>
+        <h2> Enjoy Your Wonderful Time! </h2>
+        <!-- create a signup and signin button-->
+         <div class="signbox">
+           <a href="{% url 'login' %}" class="button">Sign In</a>
+          <a href="{% url 'register' %}" class="button">Sign Up</a>
+        </div>
+
+    </div>
+  
+    {% include "footer.html" %}
+
+  </body>
+</html>

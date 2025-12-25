@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registration Form | Ankan</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f0f8ff; display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+  <div class="container" style="width: 100%; max-width: 400px; background-color: white; padding: 20px 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+    <div class="registration form" style="text-align: center;">
+      <header style="font-size: 2rem; margin-bottom: 20px; color: #007bff;">Signup</header>
+      <form action="{% url 'register' %}" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+        {% csrf_token %}
+        <input type="text" placeholder="Enter your first name" name="first_name" 
+               style="padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+        <input type="text" placeholder="Enter your last name" name="last_name" 
+               style="padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+        <input type="text" placeholder="Enter your email" name="email" 
+               style="padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+        <input type="password" placeholder="Create a password" name="password1" 
+               style="padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+        <input type="password" placeholder="Confirm your password" name="password2" 
+               style="padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+        <input type="submit" class="button" value="Signup" 
+               style="padding: 10px; font-size: 1rem; color: white; background-color: #28a745; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        
+        <center>
+          {% if error %}
+          <p style="color: red; font-size: 0.9rem;">{{ error }}</p>
+          {% endif %}
+        </center>
+        
+      </form>
+      
+      <div class="signup" style="margin-top: 20px; font-size: 0.9rem; color: #555;">
+        <span>Already have an account? 
+          <a href="{% url 'login' %}" style="color: #007bff; text-decoration: none; font-weight: bold;">
+            Signin
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  {% include "footer.html" %}
+
+</body>
+</html>
